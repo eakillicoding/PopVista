@@ -4,8 +4,8 @@ from .views import TaskViewSet, LabelViewSet
 
 
 router = DefaultRouter()
-router.register(r'tasks', TaskViewSet)
-router.register(r'labels', LabelViewSet)
+router.register(r'tasks', TaskViewSet, basename='task')
+router.register(r'labels', LabelViewSet, basename='label')
 
 
 urlpatterns = [
