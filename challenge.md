@@ -48,3 +48,17 @@ npm install
 ## Start the development server
 npm start
 ```
+
+### User Credentials
+
+#### User 1:
+
+username: Emre
+
+password: pass123
+
+#### User 2:
+
+username: Akilli
+
+password: pass123
