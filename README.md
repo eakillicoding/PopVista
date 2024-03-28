@@ -1,67 +1,64 @@
-# Backend Developer Challenge
+# Take Home Assessment
 
-Thank you for your interest in the Backend Developer position at AAK Tele-Science. This coding challenge is designed to assess your skills in developing a Django and Django Rest Framework (DRF) backend. Please follow the instructions below and deliver your work on a GitHub repository.
+## Introduction
+This project represents a sophisticated full-stack application, leveraging Django for backend operations and React for the frontend. The backend is designed to securely store and manage data, which is retrieved by the frontend through React's Fetch API. This data is utilized to generate a detailed population funnel chart, showcasing the demographic of the United States in the year 2022 by age and gender.
 
-## Project Description
+## Getting Started
 
-You are tasked with building a backend for a simple task management system. The application should include at least `Task` and `Label` models, and you need to expose API endpoints for CRUD operations on these models.
+### Prerequisites
+Python, Django, Node.js, npm, React
 
-## Instructions
+### Installation
+A step-by-step guide that tells you how to get a development environment running.
 
-1. Fork this repository to your GitHub account.
+### Backend (Django)
+```bash
+# Clone the repository
+git clone <repo_url>
+cd <cloned_repo>
 
-2. Create a new Django project within your forked repository.
+# Setup virtual environment
+python -m venv venv
 
-3. Implement a Django app for managing tasks called `tasks`.
+# Run virtual environment
+source venv/bin/activate #Mac/Linux
+venv\Scripts\activate #Windows
 
-4. Create at least two models:
-   - `Task`:  This model should have a title, description, completion status, owner, and a many-to-many relationship to `Label`. 
-   - `Label`: This model should have a name and owner. Add the necessary constraints to avoid duplicate values.
+# Install dependencies
+pip install -r requirements.txt
 
-5. Implement API endpoints for CRUD operations on both `Task` and `Label` models. Use Django Rest Framework for creating these APIs.
+# Backend directory
+cd backend
 
-6. Implement user authentication and authorization for the API. Users should only be able to perform CRUD operations on their tasks and labels.
+# Run migrations
+python manage.py migrate
 
-> [!TIP]
-> Create 2 users with the `python manage.py shell` command with the `is_staff` flag set to `True` so you can use the built-in admin site to log in. Detail the user's credentials on the `challenge.md` file. 
+# Start the development server
+python manage.py runserver
+```
 
-7. Include clear instructions on how to set up and run your project locally in a file called `challenge.md`.
+### Frontend (React)
+```bash
+## Navigate to the frontend directory
+cd <frontend>
 
-8. Commit your changes regularly and provide meaningful commit messages.
+## Install dependencies
+npm install
 
-9. Push your code to your GitHub repository.
+## Start the development server
+npm start
+```
 
-## Bonus Points
+### User Credentials
 
-- Write custom filters for the list view of the `Task` and `Label` models to only show your resources (the ones related to the user that's making the request).
+#### User 1:
 
-- Write tests for your models and API endpoints.
+username: Emre
 
-## Review Criteria
+password: pass123
 
-- **Code Quality:**
-  - Readability: Ensure the code is well-organized and follows the PEP 8 style guide.
-  - Modularity: Divide code into modular components for easy understanding and maintenance.
-  - Best Practices: Adhere to Django best practices and guidelines.
+#### User 2:
 
-- **Functionality:**
-  - Correctness: Ensure the application meets specified requirements and functions as expected.
-  - Completeness: Implement all specified features and API endpoints.
-  - Performance: Considerations for optimizing performance, especially in API endpoints.
+username: Akilli
 
-- **Documentation:**
-  - Setup Instructions: Document how to set up and run the project locally.
-  - Code Comments: Add comments where necessary to explain complex logic.
-
-- **Bonus Points:**
-  - Creativity: Showcase creativity in bonus features or enhancements.
-  
-## Submission
-
-Once you have completed the challenge, please send us the link to your GitHub repository. Make sure to include any relevant instructions for running the application and any additional notes you'd like to share on the `challenge.md` file.
-
-> [!IMPORTANT]
-> You will have 72 hours to complete this challenge.
-
-Thank you, and good luck!
-
+password: pass123
