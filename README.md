@@ -1,7 +1,7 @@
-# Take Home Assessment
+# PopVista
 
 ## Introduction
-This project represents a sophisticated full-stack application, leveraging Django for backend operations and React for the frontend. The backend is designed to securely store and manage data, which is retrieved by the frontend through React's Fetch API. This data is utilized to generate a detailed population funnel chart, showcasing the demographic of the United States in the year 2022 by age and gender.
+PopVista is a sophisticated full-stack application, leveraging Django for backend operations and React for the frontend. The backend is designed to securely store and manage data, which is retrieved by the frontend through React's Fetch API. This data is utilized to generate a detailed funnel chart of a country's population, which in this instance showcases the demographic of the United States in the year 2022 by age and gender.
 
 ## Getting Started
 
@@ -48,17 +48,3 @@ npm install
 ## Start the development server
 npm start
 ```
-
-### User Credentials
-
-#### User 1:
-
-username: Emre
-
-password: pass123
-
-#### User 2:
-
-username: Akilli
-
-password: pass123
